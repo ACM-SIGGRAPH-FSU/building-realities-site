@@ -1,0 +1,13 @@
+# build directories and files
+[Bb]uild*/
+*.o
+*.so
+*.ghc
+
+# Binaries and Dependencies
+[Bb]in*/
+.[Nn]ode_*/
+
+# OS files
+*.swp
+*.db
