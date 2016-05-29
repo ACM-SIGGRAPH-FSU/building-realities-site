@@ -1,0 +1,50 @@
+/*
+ *   _    __     _               __  _
+ *  ' )  /_/_   //  _/_         /  )//
+ *   /  / /  o // o /  __  ,   /   // __.  _   _   _  _
+ *  (__/ <__<_</_<_<__/ (_/_  (__/</_(_/|_/_)_/_)_</_/_)_
+ *                       /
+ *                      '
+ */
+.centered {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+
+/*
+ *     _                         ()       _____ _
+ *   _//                   _/_   /\        /  '//         /
+ *   /   __.  __  , __ . . /    (  X    ,-/-, // _  _.,  /____ _.,
+ *  /___(_/|_/ (_/_(_)(_/_<__    \/ \  (_/   </_</_/ /\_/_)(_)/ /\_
+ *          /
+ *         '
+ */
+body {
+    padding: 0px 0px 0px 0px;
+    margin: 4em 2em 4em 2em;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    height: 500px;
+}
+
+main article {
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer aside {
+    flex: none;
+    padding: 2em 2em 2em 2em;
+    margin: 1em 1em 1em 1em;
+}
