@@ -58,6 +58,19 @@ main article {
 
 }
 
+.button {
+    padding: .25em;
+    border-style: solid;
+    border-color: #D7AE70;
+    color: #D7AE70;
+    background-color:  #5C2020;
+}
+.button:hover {
+    text-decoration: none !important;
+    box-shadow: 2px 1px 5px #010101;
+}
+
+
 /*
  *    ______
  *      /                              /
@@ -99,7 +112,4 @@ a {
 }
 a:visited {
     text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
 }
