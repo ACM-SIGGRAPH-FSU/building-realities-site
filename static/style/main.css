@@ -12,6 +12,15 @@
     text-align: center;
 }
 
+.gradient {
+    background-image: linear-gradient(60deg, red, #f06d06);
+}
+
+.circle {
+    background-image: url("../img/circle.svg");
+    background-repeat: repeat;
+}
+
 
 /*
  *     _                         ()       _____ _
@@ -21,30 +30,76 @@
  *          /
  *         '
  */
+/*  Colors:
+ *      Background: #5C2020
+ *      Base text: #F1F0F0
+ *      Gold: #D7AE70
+ */
 body {
     padding: 0px 0px 0px 0px;
-    margin: 4em 2em 4em 2em;
+    margin: 0em 0em 0em 0em;
+    background-color: #5C2020;
 }
 
 main {
     display: flex;
     flex-flow: column;
     align-content: center;
-    height: 500px;
+    height: 600px;
+    background-image: url("../img/SIGGRAPH Square Transparent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 main article {
-    margin: auto;
+    margin: auto; /* Center main content vertically */
+    padding: 20px;
+
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+/*
+ *    ______
+ *      /                              /
+ *   --/__  , _   __ _,  __  __.  _   /_  __  ,
+ *  (_// (_/_/_)_(_)(_)_/ (_(_/|_/_)_/ /_/ (_/_
+ *        / /        /|         /           /
+ *       ' '        |/         '           '
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic|Roboto+Condensed:400,700);
+
+/* Base style */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #F1F0F0;
 }
 
-footer aside {
-    flex: none;
-    padding: 2em 2em 2em 2em;
-    margin: 1em 1em 1em 1em;
+
+/* Headings */
+h1, h2 {
+    color: #F1F0F0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+
+/* Transition Text */
+p.scroll {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+
+/* Links */
+a {
+    color: #D7AE70;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
