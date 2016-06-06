@@ -17,6 +17,7 @@
 }
 
 .circle {
+    position: relative;
     background-image: url("../img/circle.svg");
     background-repeat: repeat;
 }
