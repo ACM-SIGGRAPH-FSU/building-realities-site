@@ -46,7 +46,7 @@ main {
     flex-flow: column;
     align-content: center;
     height: 600px;
-    background-image: url("../img/SIGGRAPH Square Transparent.png");
+    background-image: url("../img/SIGGRAPH_Logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
