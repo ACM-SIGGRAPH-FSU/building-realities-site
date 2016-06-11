@@ -48,8 +48,11 @@ main {
     flex-flow: column;
     align-content: center;
     height: 600px;
+<<<<<<< HEAD
     text-align: center;
     z-index: 1;
+=======
+>>>>>>> a85439c01b7ab8ea9b81a4715aeeaf1c62ac7ddf
 }
 
 main article {
