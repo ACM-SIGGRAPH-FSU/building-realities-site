@@ -43,14 +43,13 @@ body {
 }
 
 main {
+    position: relative;
     display: flex;
     flex-flow: column;
     align-content: center;
     height: 600px;
-    background-image: url("../img/SIGGRAPH_Logo.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    text-align: center;
+    z-index: 1;
 }
 
 main article {
@@ -146,4 +145,20 @@ a:visited {
   visibility: hidden;
   opacity: 0;
   position: absolute;
+}
+
+#logo {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: -40%;
+    z-index: -1;
+}
+
+.garnet, .gold {
+    pointer-events: all;
+}
+
+.garnet:hover, .gold:hover {
+    filter: brightness(.9);
 }
