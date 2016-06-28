@@ -1,4 +1,4 @@
-/*  -------------- svgAnimation.js
+/*  -------------- svgAnimation.js ---------------------------------------------
  *  Responsible for controlling the animations of elements on the page.
  *
  *  Uses GSAP to control the selected elements, all animaiton happens over
@@ -6,7 +6,7 @@
  */
 
 
-// Declarations
+//  --------------  Declarations -----------------------------------------------
 
 
 // Animation timeline
@@ -22,13 +22,14 @@ var logo = document.getElementById('logo');
 var hemisphereGold = document.getElementById('hemisphere-gold');
 var hemisphereGarnet = document.getElementById('hemisphere-garnet');
 
-
 // Collections of elements
 
 // List of triangles to use in the random fade animation
 var trianglesGold = document.getElementsByClassName("gold");
 var trianglesGarnet = document.getElementsByClassName('garnet');
 
+
+//  -------------- Funcitons ---------------------------------------------------
 
 // Random Fade animation
 //
@@ -61,10 +62,13 @@ function randomFade(es) {
 }
 
 
+//  -------------- Animation ---------------------------------------------------
+
+
 // Intro logo animation.
 
 tl.from(hemisphereGold, 1, {x:-100, y:-100, opacity:0, ease:Linear.easeOut});
-tl.from(hemisphereGarnet, 1, {x:100, y:100, opacity:0, ease:Linear.easeOut}, "-=1");
+tl.from(hemisphereGarnet, 1, {x:100, y:100, opacity:0, ease:Linear.easeOut} , "-=1");
 
 
 // Call randomFade
