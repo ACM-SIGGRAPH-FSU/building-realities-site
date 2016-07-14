@@ -47,64 +47,66 @@
  */
 
 .masthead {
-    position      : fixed;
-    padding       : .45em 2em 6em 2em;
-    display       : flex;
-    flex-flow     : column;
-    align-content : center;
-    text-align    : center;
-    z-index       : 1;
-    top           : 0;
+/*  The masthead is the hero style header of our website.
+ *  It contains the teaser animation, and stays fixed in position as the body
+ *  of the website scrolls over it.
+ */
+    position: fixed;
+    padding: .45em 2em 6em 2em;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    text-align: center;
+    z-index: 1;
+    top: 0;
 }
 
 body {
-    padding          : 0px 0px 0px 0px;
-    margin           : 0em 0em 0em 0em;
-    background-color : #D8D8D8;
+    padding: 0px 0px 0px 0px;
+    margin: 0em 0em 0em 0em;
+    background-color: #D8D8D8;
 }
 
 .summary {
-    margin           : auto; /* Center main content vertically */
-    padding          : 40px;
-    background-color : ;
+    margin: auto; /* Center main content vertically */
+    padding: 40px;
+    background-color: ;
 }
 
 .container {
-    padding    : 0.5em;
-    text-align : center;
+    padding: 0.5em;
+    text-align: center;
 }
 
 #logo {
-    height  : 100%;
-    width   : 100%;
-    z-index : -1;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 /* User Interface*/
 
 .button {
-    border-style     : solid;
-    border-color     : white;
-    background-color : #3E4147;
-    padding          : 0.25em;
+    border-style: solid;
+    border-color: white;
+    background-color: #3E4147;
+    padding: 0.25em;
 }
 
 .button.signup {
-    position  : absolute;
-    left      : 50%;
-    top       : 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
     transform : translateX(-50%);
-    /*margin    : 15% auto;*/
-    /*padding   : 10% 0%*/
 }
 
 .button:hover {
-    text-decoration : none !important;
-    box-shadow      : 2px 1px 5px #010101;
+    text-decoration: none !important;
+    box-shadow: 2px 1px 5px #010101;
 }
 
 .masthead div.container {
-    height  : 60%;
+    height: 60%;
 }
 
 
@@ -120,32 +122,33 @@ body {
 
 /* Base style */
 * {
-    font-family : 'Roboto';
-    font-weight : 400;
-    color       : #3E4147;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #3E4147;
 }
 
 /* Headings */
 h1, h2 {
-    font-family : 'Roboto';
-    font-weight : 400;
-    font-size   : 2.5em;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-bottom: 0em;
 }
 
 /* Transition Text */
 .headline p {
-    font-size        : 2em;
-    font-weight      : bold;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 /* Links */
 a {
-    color           : white;
-    text-decoration : none;
-    font-weight     : bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 a:visited {
-    text-decoration : none;
+    text-decoration: none;
 }
 
 
@@ -158,32 +161,32 @@ a:visited {
  *
  */
 .headline {
-    margin  : 10px;
-    padding : 10px;
-    display : flex;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
 }
 
 .headline p {
-    opacity    : 0;
-    text-align : center;
+    opacity: 0;
+    text-align: center;
 }
 .headline p.visible {
-    margin     : auto;
-    visibility : visible;
-    opacity    : 1;
-    transition : visibility 0s, opacity 1s ease;
+    margin: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 1s ease;
 }
 .headline .hidden {
-    visibility : hidden;
-    opacity    : 0;
-    position   : absolute;
-    transition : visiblity 1s, opacity 1s ease;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: visiblity 1s, opacity 1s ease;
 }
 
 .garnet, .gold {
-    pointer-events : all;
+    pointer-events: all;
 }
 
 .garnet:hover, .gold:hover {
-    filter : brightness(.9);
+    filter: brightness(.9);
 }
