@@ -51,14 +51,16 @@
  *  It contains the teaser animation, and stays fixed in position as the body
  *  of the website scrolls over it.
  */
-    /*position: fixed;*/
-    padding: 0.5em 2em 0.5em 2em;
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    text-align: center;
-    z-index: 1;
+    /* Positioning */
+    position: absolute;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    padding: 0.5em 2em 0.5em 2em;
+    text-align: center;
 }
 
 body {
