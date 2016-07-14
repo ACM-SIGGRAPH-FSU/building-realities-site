@@ -7,18 +7,18 @@
  *                      '
  */
 .centered {
-    margin: auto;
-    width: 100%;
-    text-align: center;
+    margin     : auto;
+    width      : 100%;
+    text-align : center;
 }
 
 .gradient {
-    background-image: linear-gradient(60deg, red, #f06d06);
+    background-image : linear-gradient(60deg, red, #f06d06);
 }
 
 .bg-circle {
-    background-image: url("../img/circle.svg");
-    background-repeat: repeat;
+    background-image  : url("../img/circle.svg");
+    background-repeat : repeat;
 }
 
 
@@ -37,48 +37,48 @@
  */
 
 .masthead {
-    padding: .45em 0em 6em 0em;
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    text-align: center;
-    z-index: 1;
-    top: 0;
+    padding       : .45em 0em 6em 0em;
+    display       : flex;
+    flex-flow     : column;
+    align-content : center;
+    text-align    : center;
+    z-index       : 1;
+    top           : 0;
 }
 
 body {
-    padding: 0px 0px 0px 0px;
-    margin: 0em 0em 0em 0em;
-    background-color: #D8D8D8;
+    padding          : 0px 0px 0px 0px;
+    margin           : 0em 0em 0em 0em;
+    background-color : #D8D8D8;
 }
 
 .summary {
-    position: relative;
-    margin: auto; /* Center main content vertically */
-    padding: 40px;
-    background-color: ;
+    position         : relative;
+    margin           : auto; /* Center main content vertically */
+    padding          : 40px;
+    background-color : ;
 }
 
 #logo {
-    position: absolute;
-    height: 200%;
-    width: 200%;
-    left: -50%;
-    top: -30%;
-    z-index: -1;
+    position : absolute;
+    height   : 200%;
+    width    : 200%;
+    left     : -50%;
+    top      : -30%;
+    z-index  : -1;
 }
 
 /* User Interface*/
 
 .button {
-    padding: .25em;
-    border-style: solid;
-    border-color: #FFFC7F;
-    background-color: #3E4147;
+    padding          : .25em;
+    border-style     : solid;
+    border-color     : #FFFC7F;
+    background-color : #3E4147;
 }
 .button:hover {
-    text-decoration: none !important;
-    box-shadow: 2px 1px 5px #010101;
+    text-decoration : none !important;
+    box-shadow      : 2px 1px 5px #010101;
 }
 
 
@@ -94,39 +94,39 @@ body {
 
 /* Base style */
 * {
-    font-family: 'Roboto';
-    font-weight: 400;
-    color: #3E4147;
+    font-family : 'Roboto';
+    font-weight : 400;
+    color       : #3E4147;
 }
 
 /* Headings */
 h1, h2 {
-    text-shadow: 1px 1px 0px #FFFC7F;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 3em;
+    text-shadow : 1px 1px 0px #FFFC7F;
+    font-family : 'Roboto';
+    font-weight : 400;
+    font-size   : 3em;
 }
 
 /* Transition Text */
 .headline p {
-    font-size: 1.25em;
-    font-weight: bold;
-    background-color: #FFFC7F;
+    font-size        : 1.25em;
+    font-weight      : bold;
+    background-color : #FFFC7F;
 }
 p.description {
-    text-shadow: 2px 2px 0px #D8D8D8;
-    font-weight: bold;
-    font-size: 2.25em;
-    margin-bottom: 0px;
+    text-shadow   : 2px 2px 0px #D8D8D8;
+    font-weight   : bold;
+    font-size     : 2.25em;
+    margin-bottom : 0px;
 }
 
 /* Links */
 a {
-    color: #FFFC7F;
-    text-decoration: none;
+    color           : #FFFC7F;
+    text-decoration : none;
 }
 a:visited {
-    text-decoration: none;
+    text-decoration : none;
 }
 
 
@@ -139,32 +139,32 @@ a:visited {
  *
  */
 .headline {
-    margin: 10px;
-    padding: 10px;
-    display: flex;
+    margin  : 10px;
+    padding : 10px;
+    display : flex;
 }
 
 .headline p {
-    opacity: 0;
-    text-align: center;
+    opacity    : 0;
+    text-align : center;
 }
 .headline p.visible {
-    margin: auto;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s, opacity 1s ease;
+    margin     : auto;
+    visibility : visible;
+    opacity    : 1;
+    transition : visibility 0s, opacity 1s ease;
 }
 .headline .hidden {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: visiblity 1s, opacity 1s ease;
+    visibility : hidden;
+    opacity    : 0;
+    position   : absolute;
+    transition : visiblity 1s, opacity 1s ease;
 }
 
 .garnet, .gold {
-    pointer-events: all;
+    pointer-events : all;
 }
 
 .garnet:hover, .gold:hover {
-    filter: brightness(.9);
+    filter : brightness(.9);
 }
