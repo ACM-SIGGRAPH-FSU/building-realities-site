@@ -6,18 +6,17 @@ function cycleAnimation(child) {
     setTimeout(function(){ cycleAnimation(next) }, animationDelay);
 }
 
-function nextChild($child) {
-    return (!$child.is(':last-child')) ? $child.next() : $child.parent().children().eq(0);
+function nextChild(child) {
+    return (!child.is(':last-child')) ? child.next() : child.parent().children().eq(0);
 }
 
-function switchChild($oldChild, $newChild) {
-    $oldChild.removeClass('visible').addClass('hidden');
-    $newChild.removeClass('hidden').addClass('visible');
+function switchChild(oldChild, newChild) {
+    oldChild.removeClass('visible').addClass('hidden');
+    newChild.removeClass('hidden').addClass('visible');
 }
 
-function loopAnimation($headlines) {
-    var duration = animationDelay;
-    $headlines.each(function(){
+function loopAnimation(headlines, duration) {
+    headlines.each(function(){
         var parent = $(this);
 
         //trigger animation
@@ -26,7 +25,7 @@ function loopAnimation($headlines) {
 }
 
 jQuery(document).ready(function($){
-
-    loopAnimation($('.headline'));
+    // Begins animation loop on the headline elements.
+    loopAnimation($('.headline'), animationDelay);
 
 });
