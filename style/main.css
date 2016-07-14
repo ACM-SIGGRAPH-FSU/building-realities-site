@@ -52,7 +52,7 @@
  *  of the website scrolls over it.
  */
     position: fixed;
-    padding: .45em 2em 6em 2em;
+    padding: 0.5em 2em 0.5em 2em;
     display: flex;
     flex-flow: column;
     align-content: center;
@@ -65,6 +65,10 @@ body {
     padding: 0px 0px 0px 0px;
     margin: 0em 0em 0em 0em;
     background-color: #D8D8D8;
+}
+
+article {
+    display: block;
 }
 
 .summary {
@@ -109,6 +113,17 @@ body {
     height: 60%;
 }
 
+.headline {
+    position: relative;
+}
+
+.headline p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /*
  *    ______
@@ -133,6 +148,10 @@ h1, h2 {
     font-weight: 400;
     font-size: 2.5em;
     margin-bottom: 0em;
+}
+
+header h1 {
+    font-weight: bold;
 }
 
 /* Transition Text */
@@ -177,10 +196,12 @@ a:visited {
     transition: visibility 0s, opacity 1s ease;
 }
 .headline .hidden {
-    visibility: hidden;
     opacity: 0;
     position: absolute;
-    transition: visiblity 1s, opacity 1s ease;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: left 4s, opacity 1s ease;
 }
 
 .garnet, .gold {

@@ -25,11 +25,6 @@ jQuery(document).ready(function($){
         setTimeout(function(){ hideWord(nextWord) }, animationDelay);
     }
 
-    function showWord($word, $duration) {
-        showLetter($word.find('i').eq(0), $word, false, $duration);
-        $word.addClass('visible').removeClass('hidden');
-    }
-
     function takeNext($word) {
         return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
     }
