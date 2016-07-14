@@ -39,8 +39,6 @@ function randomFade(es) {
     var t = Math.random() * 5;   // the duration of the animation
     var p = Math.random() * 50;  // the position to translate to
 
-    console.log("Fading element to ", p, "at time ", t);
-
     // Translate and fade away
     tl.to( es[e]
         , t
