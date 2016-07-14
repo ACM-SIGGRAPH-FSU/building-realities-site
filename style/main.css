@@ -47,7 +47,8 @@
  */
 
 .masthead {
-    padding       : .45em 0em 6em 0em;
+    position      : fixed;
+    padding       : .45em 2em 6em 2em;
     display       : flex;
     flex-flow     : column;
     align-content : center;
