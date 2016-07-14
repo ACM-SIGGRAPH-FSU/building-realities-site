@@ -417,3 +417,15 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+
+/**
+ * Fixes box model, alowing for different uses but setting default to
+ * border-box.
+ */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
