@@ -8,7 +8,7 @@
  */
 .centered {
     margin: auto;
-    width: 80%;
+    width: 100%;
     text-align: center;
 }
 
@@ -16,8 +16,7 @@
     background-image: linear-gradient(60deg, red, #f06d06);
 }
 
-.circle {
-    position: relative;
+.bg-circle {
     background-image: url("../img/circle.svg");
     background-repeat: repeat;
 }
@@ -37,22 +36,20 @@
  *      Gold: #D7AE70
  */
 
-header {
+.masthead {
     padding: .45em 0em 6em 0em;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    text-align: center;
+    z-index: 1;
+    top: 0;
 }
 
 body {
     padding: 0px 0px 0px 0px;
     margin: 0em 0em 0em 0em;
     background-color: #D8D8D8;
-}
-
-main {
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    text-align: center;
-    z-index: 1;
 }
 
 .summary {
