@@ -69,16 +69,6 @@ body {
     background-color: #D8D8D8;
 }
 
-article {
-    display: block;
-}
-
-.summary {
-    margin: auto; /* Center main content vertically */
-    padding: 40px;
-    background-color: ;
-}
-
 .container {
     padding: 0.5em;
     text-align: center;
