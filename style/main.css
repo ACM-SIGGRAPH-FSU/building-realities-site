@@ -21,6 +21,16 @@
     background-repeat : repeat;
 }
 
+/*  Positioning  */
+.absolute {
+    position : absolute;
+}
+
+.realtive {
+    position : relative;
+}
+
+
 
 /*
  *     _                         ()       _____ _
