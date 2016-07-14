@@ -1,43 +1,32 @@
-function hideWord($word) {
-    var nextWord = takeNext($word);
-    switchWord($word, nextWord);
-    setTimeout(function(){ hideWord(nextWord) }, animationDelay);
+var animationDelay = 2500;
+
+function cycleAnimation(child) {
+    var next = nextChild(child);
+    switchChild(child, next);
+    setTimeout(function(){ cycleAnimation(next) }, animationDelay);
 }
 
-function takeNext($word) {
-    return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+function nextChild($child) {
+    return (!$child.is(':last-child')) ? $child.next() : $child.parent().children().eq(0);
 }
 
-function takePrev($word) {
-    return (!$word.is(':first-child')) ? $word.prev() : $word.parent().children().last();
+function switchChild($oldChild, $newChild) {
+    $oldChild.removeClass('visible').addClass('hidden');
+    $newChild.removeClass('hidden').addClass('visible');
 }
-
-function switchWord($oldWord, $newWord) {
-    $oldWord.removeClass('visible').addClass('hidden');
-    $newWord.removeClass('hidden').addClass('visible');
-}
-
 
 function loopAnimation($headlines) {
     var duration = animationDelay;
     $headlines.each(function(){
-        var headline = $(this);
+        var parent = $(this);
 
         //trigger animation
-        setTimeout(function(){ hideWord( headline.find('.visible').eq(0) ) }, duration);
+        setTimeout(function(){ cycleAnimation( parent.find('.visible').eq(0) ) }, duration);
     });
 }
 
-
 jQuery(document).ready(function($){
-    //set animation timing
-    var animationDelay = 2500;
 
-    initHeadline();
-
-    function initHeadline() {
-        //initialise headline animation
-        loopAnimation($('.headline'));
-    }
+    loopAnimation($('.headline'));
 
 });
