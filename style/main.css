@@ -84,10 +84,30 @@ body {
     bottom: 5%;
 }
 
+/* Controls the formatting & size of the teaser */
+
 #teaser {
-    height: 100%;
     z-index: -1;
 }
+
+@media screen and (min-height: 870px) {
+    #teaser {
+        height: 700px;
+    }
+}
+
+@media screen and (min-height: 700px) and (max-height: 869px) {
+    #teaser {
+        height: 500px;
+    }
+}
+
+@media screen and (max-height: 699px) {
+    #teaser {
+        height: 400px;
+    }
+}
+
 
 /* User Interface */
 
@@ -175,6 +195,10 @@ header .tagline {
     white-space: nowrap;
 }
 
+.tagline {
+    white-space: nowrap;
+}
+
 /* Links */
 a {
     color: white;
@@ -185,6 +209,26 @@ a:visited {
     text-decoration: none;
 }
 
+
+/* Responsive font sizes */
+
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .headline p {
+        font-size: 1.5em;
+    }
+
+    .tagline {
+        font-size: 0.8em;
+    }
+}
 
 /*
  *     __
