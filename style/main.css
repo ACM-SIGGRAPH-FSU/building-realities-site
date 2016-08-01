@@ -21,6 +21,10 @@
     position : relative;
 }
 
+.fixed {
+    position : fixed;
+}
+
 
 
 /*
@@ -43,25 +47,25 @@
  *  of the website scrolls over it.
  */
     /* Positioning */
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: -1;
 
     padding: 0.5em 2em 0.5em 2em;
     text-align: center;
+    background-color: #D8D8D8;
 }
 
 body {
     padding: 0px 0px 0px 0px;
     margin: 0em 0em 0em 0em;
-    background-color: #D8D8D8;
 }
 
 .container {
-    padding: 0.5em;
+    padding: 1em;
 }
 
 .masthead div.container {
@@ -120,7 +124,7 @@ body {
 
 /* User Interface */
 
-.button {
+.masthead .button {
     border-style: solid;
     border-color: white;
     background-color: #3E4147;
@@ -134,7 +138,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.button:hover {
+.masthead .button:hover {
     text-decoration: none !important;
     box-shadow: 2px 1px 5px #010101;
 }
@@ -156,6 +160,53 @@ body {
     top: 0%;
     left: 50%;
     transform: translate(-50%, 0%);
+}
+
+/* Navigation */
+nav.site-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 0.5em 0.75em;
+    z-index: 999;
+}
+
+ul.site-nav {
+    padding: 0em;
+    margin: 0em;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+ul.site-nav li {
+    height: 100%;
+    margin: auto;
+}
+
+li.site-nav.title {
+    margin-left: -0.5em;
+}
+
+main {
+    z-index: 1;
+    padding: 1em;
+    padding-top: 5em;
+    margin: 0em;
+    margin-top: 900px;
+    background-color: white;
+    width: 100%;
+}
+
+main div.container {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    text-align: left !important;
 }
 
 /*
@@ -212,15 +263,25 @@ header h1 {
 
 
 /* Links */
-a {
+.masthead a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-a:visited {
+.masthead a:visited {
+    color: white;
     text-decoration: none;
 }
 
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
 
 /* Responsive font sizes */
 
