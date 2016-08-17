@@ -1,4 +1,88 @@
 /*
+ *    ______
+ *      /                              /
+ *   --/__  , _   __ _,  __  __.  _   /_  __  ,
+ *  (_// (_/_/_)_(_)(_)_/ (_(_/|_/_)_/ /_/ (_/_
+ *        / /        /|         /           /
+ *       ' '        |/         '           '
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic|Roboto+Condensed:400,700);
+
+/* Base style */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #3E4147;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-bottom: 0em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0em;
+    padding: 0.25em;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+.tagline {
+    margin: 0em;
+    padding: 0em;
+    white-space: nowrap;
+}
+
+.tagline:last-of-type {
+    margin-bottom: 0.5em;
+}
+
+/* Transition Text */
+.headline p {
+    font-size: 2em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited {
+    text-decoration: none;
+}
+
+
+/* Responsive font sizes */
+
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .headline p {
+        font-size: 1.5em;
+    }
+
+    .tagline {
+        font-size: 0.8em;
+    }
+}
+
+/*
  *   _    __     _               __  _
  *  ' )  /_/_   //  _/_         /  )//
  *   /  / /  o // o /  __  ,   /   // __.  _   _   _  _
@@ -160,90 +244,6 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
-}
-
-/*
- *    ______
- *      /                              /
- *   --/__  , _   __ _,  __  __.  _   /_  __  ,
- *  (_// (_/_/_)_(_)(_)_/ (_(_/|_/_)_/ /_/ (_/_
- *        / /        /|         /           /
- *       ' '        |/         '           '
- */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic|Roboto+Condensed:400,700);
-
-/* Base style */
-* {
-    font-family: 'Roboto';
-    font-weight: 400;
-    color: #3E4147;
-}
-
-/* Headings */
-h1 {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 2.5em;
-    margin-bottom: 0em;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 0em;
-    padding: 0.25em;
-}
-
-header h1 {
-    font-weight: bold;
-}
-
-.tagline {
-    margin: 0em;
-    padding: 0em;
-    white-space: nowrap;
-}
-
-.tagline:last-of-type {
-    margin-bottom: 0.5em;
-}
-
-/* Transition Text */
-.headline p {
-    font-size: 2em;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-
-/* Links */
-a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-a:visited {
-    text-decoration: none;
-}
-
-
-/* Responsive font sizes */
-
-@media screen and (max-width: 430px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1em;
-    }
-
-    .headline p {
-        font-size: 1.5em;
-    }
-
-    .tagline {
-        font-size: 0.8em;
-    }
 }
 
 /*
