@@ -27,5 +27,4 @@ function loopAnimation(headlines, duration) {
 jQuery(document).ready(function($){
     // Begins animation loop on the headline elements.
     loopAnimation($('.headline'), animationDelay);
-
 });
