@@ -1,179 +1,38 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Head content -->
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title and Icon -->
+    <title>Building Realities</title>
+    <link rel="icon" type="image/png" href="assets/img/SIGGRAPH_Icon.png">  
+  
+    <!-- Imports -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100|Source+Sans+Pro:300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100|Source+Sans+Pro:300">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
 
-  <!-- Title, Icon, & Description -->
-  <title>Building Realities Hackathon: November 2016</title>
-  <link rel="icon" href="img/SIGGRAPH_Icon.png"/>
-
-  <!-- CSS imports -->
-  <link rel="stylesheet" type="text/css" href="style/normalize.css">
-  <link rel="stylesheet" type="text/css" href="style/main.css">
-
-  <!-- HTML-5 Shim for old I.E. browsers -->
-  <!-- [if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <[endif]-->
-
-
-  <!-- Metadata for social media sites -->
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@GwenLofman" />
-  <meta name="twitter:title" content="Building Realities" />
-  <meta name="twitter:description" content="Attend the VR hackathon November 2016 at FSU"/>
-  <meta name="twitter:image" content="acm-siggraph-fsu.github.io/buildingWorldsHack/img/Square_Green.png" />
-
-  <!-- Facebook & Open Graph -->
-  <meta property="og:title" content="Building Realities"/>
-  <meta property="og:description" content="Attend the VR hackathon November 2016 at FSU"/>
-  <meta property="og:site_name" content="Building Realities"/>
-  <meta property="og:url" content="acm-siggraph-fsu.github.io/buildingWorldsHack"/>
-  <meta property="og:image" content="acm-siggraph-fsu.github.io/buildingWorldsHack/img/Square_Green.png"/>
-  <meta property="og:image:width" content="600px" />
-  <meta property="og:image:height" content="600px" />
-  <meta property="og:type" content="webstie" />
-
-
-  <!-- Script imports -->
-  <script
-    src="http://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
-<head>
-
-<!-- Website body -->
 <body>
-
-<!-- Header with Summary Content -->
-<header class="masthead centered">
-    <h1>Building Realities</h1>
-    <h2>VR Hackathon, FSU, Spring 2017</h2>
-    <section class="absolute teaser">
-        <!-- Our SVG logo -->
-        <div class="realtive container">
-            <svg id="teaser" xmlns="http://www.w3.org/2000/svg" width="1080px" height="1080px" viewBox="0 0 1080 1080">
-                  <g id="hemisphere-gold" fill-rule="evenodd">
-                    <path class="gold" d="M262 239l51 195H211.7zm152.2 155.6l-137-115 28 108zM306.6 393l20.7 81.4 60-57.6zm1-2.4L398 396l-8.6 19.3z" fill="#d7ae70"/>
-                    <path class="gold" d="M399.5 395.6l-6.6 18.2 24-17.2z" fill="#bea362"/>
-                    <path class="gold" d="M405 384l13.7 11.6 18.7-12zm16.7-48.5L403 382h34.4zm2-2l32.4-31.3-16 78.3zm35-30L511 327l-55.7-4zM454 325l-11 52.7 68-48.7zm-110.5-1.6l72.7-7.6 6 12.6z" fill="#c99964"/>
-                    <path class="gold" d="M338.4 326l63 54.5 20.3-50z" fill="#c19a63"/>
-                    <path class="gold" d="M278.8 276l54.8 46.6 77-8z" fill="#d7ae70"/>
-                    <path class="gold" d="M279.8 273.4l50.8-26.5 34.6 51zm64.4-11.4l24 38.2L389 264zm49.3 2.3l30 1.5-16 17.4zm-2.3.3l-20.5 35.6 45.5-1z" fill="#c19a63"/>
-                    <path class="gold" d="M381.8 218.8l-33 41.5 75.7 3.7z" fill="#d7ae70"/>
-                    <path class="gold" d="M492 245l-73 54.3 147-.8z" fill="#c19a63"/>
-                    <path class="gold" d="M414.2 301.7h38.6L424 329.2zm-43 .3l40.7-.6 3 12z" fill="#c99964"/>
-                    <path class="gold" d="M447.5 201.4l-13 49.5 53-8zm3.3-.4l27 27 14.4-36.7zm44.7-9.4l7 13-13.3 1.6zm-8 17l17.3-1.6 5.6 11.3zm-7.2 21L491 242l16-19.6zm6.7-18.3l-6.2 16 27.6-7.4zm80.5-57l-73 88.3 130.3 8z" fill="#c19a63"/>
-                    <path class="gold" d="M569.2 297l18-46.3-89.2-5zm20.8-45.8l19 2-26.6 19.7zm-10 25.5l-8.3 19.4 36.3-8zm29-20.7l-26 19 28.4 11z" fill="#aa8954"/>
-                    <path class="gold" d="M460 301.7l62.2 1-6.5 23.7zm65 1.3l21.5-.8-28.3 24z" fill="#c99964"/>
-                    <path class="gold" d="M267.7 239l7.6 33 66-33z" fill="#d7ae70"/>
-                    <path class="gold" d="M348 237.5l17.2-.5-12.2 14.2zm-14 10l10 13 7.5-7.8zm11.5-9.7l-11.4 7.6 17 5.5zm-44-45.8L263 224l59.7 12zm26.3-17l13 10 5.2-19.7zm13.2 14.6l58.3.2-30.8 42zm103-62.2l-59 87L541 178zm50-12.6l-48 11 59.6 29.4zM439 127l-34 12 25.3 3zm-91.3 60.5l79.8-41-27.2 41.3zm12.3-28.3l-2.4 19.7 25.8-12zm5-2.7l23.7-10 12.3 9.2zm28-12.5l9.5-4 24.5 4zm-30 14.2l23 7 16-7.5zm29-12.2l12.6 9.2 19.4-9z" fill="#c19a63"/>
-                    <path class="gold" d="M496.2 114.8l19.5-1.3-8 38.7zm22.3-.5l20.2 38-28.6 4.4zm2.5-1h34.8l-15.4 37z" fill="#a58554"/>
-                    <path class="gold" d="M558.6 114.8l28 29.8-44 6.3z" fill="#c19a63"/>
-                    <path class="gold" d="M561 113.8l26.4 29 20.2-27.2z" fill="#a58554"/>
-                    <path class="gold" d="M323.5 178l-20 12.8L326 197zm25.3 29.2l-21.5 29.6 40.6-2.6zm50.7 25.8l41.7-15.4-13.4 48.2zm35.5 20.4l8.5 25.5 43.5-34zm-7 15.2l11.4 12.4-19.4 15.4zm-2.7-.6l-16.7 17 9 12z" fill="#c19a63"/>
-                    <path class="gold" d="M262 239l-51.6 196.3 102.7.7z" fill="#d7ae70"/>
-                    <path class="gold" d="M174.3 334l-17.7 33.3L213 344z" fill="#ddad73"/>
-                    <path class="gold" d="M159.6 372l52 41.8 21.7-74.7zm46.4-51.6l45-49-17.7 65.6z" fill="#d7ae70"/>
-                    <path class="gold" d="M200.5 294l8 20.8L227 295zm19.7-26.2l10 21.3 21.8-21zm7-10l25.6 6-31.6 1.5zm19.5-19.3l6.8 22.8-24.2-6zm2.6-.2l10.8-.5-5 17z" fill="#ddad73"/>
-                    <path class="gold" d="M260.6 225.7l-9 9.3 22.7-7.6zm16.2 2.7L321 237l-66-1.2zm27.2-34.6l22.3 41.2 10.6-14.6zm3.6.8l26 6 3 17.5zm28.4 6.6l2.4 17.4 9-13zm-6-4.6l17.5 7.6-8-13zm-4-19.4l1.8 19.4 12.4-8.6zm21.7-10.6l-5 21 12.4-7zm1-2.6l9.4-3.7-2 17zm55 49l-6.5 18.7 22.3-9zm-19.3 4.3l17-5-6.2 17.2zM405 212l16.7 9.4 18-6zm2.6-1l37-8.6-4 11zm90.4-20.4l15.2 26.2 29.3-36.8zm13.6-32l57-9.5-23.6 28c-6-3-22.6-13-33.4-18z" fill="#c19a63"/>
-                    <path class="gold" d="M209.6 437l1 53.6 48-52zm57.4 1.8l44.4 52 1.7-51.2zm-5-.2l-50.6 54.8H311z" fill="#c0975e"/>
-                    <path class="gold" d="M166 415.6l28 77 17.6-74.2z" fill="#d7ae70"/>
-                    <path class="gold" d="M176.3 389L166 413.4l41.6 2zm-22-18.4l-12 31 31.4-14z" fill="#ddad73"/>
-                    <path class="gold" d="M206.6 449.7L198 494l10 .6z" fill="#c0975e"/>
-                    <path class="gold" d="M164.4 419l-36 70.6 36.8 6z" fill="#c19a63"/>
-                    <path class="gold" d="M167.2 424.4l23 70-21.5 4.8z" fill="#c0975e"/>
-                    <path class="gold" d="M197.7 516.8l20 54 61.6-51z" fill="#bf9b5b"/>
-                    <path class="gold" d="M142 405.2l18 15.4 13.2-30z" fill="#ddad73"/>
-                    <path class="gold" d="M129.6 439.3l-4.8 50.5 24.7-46.4z" fill="#bea362"/>
-                    <path class="gold" d="M130.8 437l19.5 4.3L159 423zm9-30.3l-9 27.6L157 421zm9.7 139l19.7 66L188 544z" fill="#c19a63"/>
-                    <path class="gold" d="M198 584l5.5 32.3 19.7-30.3zm59-40.4L226.4 584l-9.6-8.6zm-67.6 2l4.5 23.8 15-16.7z" fill="#b3885e"/>
-                    <path class="gold" d="M188 553.7l-17 61.6 29.3 1z" fill="#c19a63"/>
-                    <path class="gold" d="M209.6 555.2l-13 14.7 18 3zM195 572l2.5 9.5 13-7zm26.2 11l-6-6-15.2 5z" fill="#b3885e"/>
-                    <path class="gold" d="M154.3 616.3l14 45 15.5-44zm-26-30.5L147 614l13-26zm19.7-35.4l-21.5 33.4 32 1.7z" fill="#c19a63"/>
-                    <path class="gold" d="M166.2 500.2l-15.7 43 34.4-2z" fill="#d7ac70"/>
-                    <path class="gold" d="M126 492.3l10.4 33 28.8-27zm-2.3 48.3l39-37-17 45.6zm-1 1.4l3 37 18.8-27.3zm.5-50.2l-1.5 47.3 12.7-11zm3.6 95.2l6 26.8 12.2.5zm10.2 29.8l10 12.7 5.5-13.2zm-3.7 1.2l6 21 5.2-7.5zm27.3-24.4l-11 20.2 18.3.8zm-7 28.4l-12 20.6 17 .5zm-11.2 24.6L155 682l4-36zm19.6 3.6l12.3 34.3-18.7 2zm-3.4 39.4l16.7 24.7v-27.8zm26.4-71.2l7 16.6 9-15zm-7.5 22.4l-8.3 22.5 21.7-19.7zm7-18.8l-6.7 17 14.4 2.6zm5.5 25l-13.2 35.5-6.3-18.2z" fill="#c19a63"/>
-                    <path class="gold" d="M169.7 501.2l15.4 16.4 5-21.6zm66.3-4.8l49-.8-24.4 16.7zm-37.5.2l16.7 11.7 17.4-12.7zm-6-2.6l-5.4 24.6 25-9.8z" fill="#c0975e"/>
-                    <path class="gold" d="M170.7 505.5l17 35.8 8.5-11.8zm28.6 25l8.8 20.2-18-8.4z" fill="#b3885e"/>
-                    <path class="gold" d="M218.2 508.5l16.2-10.3 24 15zm-4.6 1.8l-8.5 4 53 1.5zm45.8 6l27.2-19-1.2 19zm29.6-20.7l-1.6 19 22-19.2z" fill="#c0975e"/>
-                    <path class="gold" d="M315.7 442.6l-2.6 46 12-9.6z" fill="#d7ae70"/>
-                    <path class="gold" d="M197.5 297l-19.7 33.5 27.8-14.2zm19.7-27L201 290.5l27.5 1.2zm-36.4 62.5L203 321l9.6 20zm26.5-8l8.4 17.6 14-4z" fill="#ddad73"/>
-                    <path class="gold" d="M570.5 153l37.6 65.3 36-43.4zm.7-2.8l82-13.7 64.5 56zm50.5 57.8l22.3-29.3 51 59.3z" fill="#c19a63"/>
-                    <path class="gold" d="M645.7 175l22 28.4 6.3-21.7zm86.3-20l-12.5 35.8 30.3 1.8zm30.7 17l-28.3 50.6 89.4 20.5zm-28-16.8l16 34.6 11-20.5zM719 193l14 27.4 15.5-26.3z" fill="#aa8954"/>
-                    <path class="gold" d="M716.7 194.3L696.5 238l39-3.5z" fill="#bd9861" fill-opacity=".9"/>
-                    <path class="gold" d="M675.8 183l-7 22.2 20.6 3.3zm-4.6 24.2l8 8 23-3.4zm7-23.7l13 24.5 9.6 1.8zm2.8.5l23.6 27.5 9.3-17.7zm-.4 33l14.6 18.8 10-21.8zm-62-7l-9 10 19 32.2zm3 .8l9.5 42 22-28.4zM611 255l3.2 29 24-7.6zm2.4-1.3l27 21.5 41-13.7zm42.4-27.7l-22.2 27 43.7 6.3zm3.6.7l21.4 32 14.2-17zM698 240l19.7 12.7 17.2-16.2zm-1 1.8l-14 18 32.4-6.4zm39.7-3.8l-16 15.4L761 247zm.3-8.5l3.4 8 29.3 6.6zm-1.4-4.5l42.2 20.6 8.4-9.3zm52.4 12.3l35 7.8h-42.4z" fill="#aa8954"/>
-                    <path class="gold" d="M609.6 116.3L589 144.6l59.5-10zm2.8-.3l38 17 19.3-4.6z" fill="#a58554"/>
-                    <path class="gold" d="M673.3 129.4l52 21.3-29.6-1.6zm53.3 34.4l-8.6 26-43.7-39zM683 151.2l46.8 2-3.2 9.3zM669.7 130l4.3 19 19 .4zm-1.7 1l-15 3.5 18 15z" fill="#aa8954"/>
-                    <path class="gold-cap" d="M201 625.4l58 61 79.4-136.7zm63.7-90.4l-63 87.7L299 569zm38.3-31l-34.3 28.5 52.8 11.4zm-35.6 30.5l33 32.8 36-18zm37.6-32l13.7 29.5 83.3-57.6zm15 31.3l4.8 11 12.8 2.6zm1.5-1.3L385 489l-44.6 57.6zm37.5-83.8l19.3 29.2-69.3 21zM200.8 628.5l47.2 50-58.6 19.7zm56.8 60.5l6.6 50.6 80.3-35zm38-62L276 662.5l17.4 29.5zm-21.3 36.6L260.6 687l31.3 6.6zm22.2 9.4l24.5 26-25.5-4.6zm-74.8 18l-3 52 38.3-34zm226.8 4.6l9 11.7 71.8-39.4zM345 707.8l-1 36.3 32.3-17zm-35.4 15.6l32.3-15-1 34.2zm-43.4 18.2l39.4-16.2L343 745zm-8.2-30.3l3 30.3-35.2-.5zm-81 3.7l16-13.3 21 15.2zm.3 2.4l16 25.2L213 719zm16-18.2l23.4 16.6 1-25.7zm23 19.8l-21 25.6 20.4 7.6zm7.2 23l-5.3 11.7 25.8 5.6zm3.8 1l33 .6-14.3 15.2zm34.7 1.6l16.3 15.2-30.3.5zm2-.6l16 14.8 15.5-14.4zm33.5 1l26.8 8.7-42.5 6zm1.8-.4L345 747l-18.2 5.7zm51.2-39.4l53.6.8-1 16.4zm-4.8.8l43.7 27 5-11.6zm62 .5l6 16.7 37.8-21.5zm38.5-10l-27 7.5 30.8-3.6zm-248-66.3l-14 41 7.5 1zM183 672.7l-5.2 18 14-17.3zm-5.7 22v16.6l13.6-10zm.5-1.7l13.4-15.8-3.6 21.2zM347 745l19.2-10.5 21 2.3zm31.6-16.5l-10 4.5 18.8 1.8zm18.4-6l-5.8 12 18.7-8.8zm9-14.7l-1.2 14.4 7.3 2zm46.3-4.6l-28.5 16.2 32.5-10.6zm-228-14.4l33.5 18.5-2.7-18.5zm7-2.3l17.7-6 5.6 6zm133-236l16.5 27 23.5-6zm26.7-6l15 25 62.7-53.7zm59-66.5l23.3 32.8 32.8-21.2zm-44 59l42.5-56.5 23.2 32.8zm-14.6-19.2L405 435l41-55.5zm-2 1.6l-19.2 18 34-1zM367.7 440l7 13.7L361 446zm21.5 6l-11.2 8 26.6 16zm-18.5-6.4l5.6 12.6 23.2-13.6zm139-106.6L453 373.4l55.6 13.6zm4-2l-2 54 46-28.8zm34-26.5l-27 23.4 52-1zM517 329l20 12 35.8-11.5zm43.6 24.7l13-23-35.2 12.2zm37.7-61.7l-33 58.2 44.8-43zm4.3 0l16.6 23.3 36-42.4zm56.8-19.4L620.2 319l100.5-42.6zm-93.2 27.6l29-7.6-18.7 33zm-17 2.2l14.5-.7 10.6 23.7zm62.2 6.6l-33.6 32.6 40.4-21.7zm52-38.4l53.3-15 4.5 18.8zm57.3-13.4l3 15.7 52-18zm57 .5l5 3-35.2 7zm-10.5-9.7l-35.8 6.2 42-1.5zm2.5-1l15.2 11.2 14-11.6zm35.3 0l21.8 10.7-40.4 2.6zm6.7-.4L834 248l-4.7 8.7zM837 249l22.6 14.3-27.7-4.6z" fill="#876d49"/>
-                    <path class="gold" d="M789.4 199.7l38 45.4 19.4-4zm58 43l11.7 19-25-16.3zm-82.2-70.3l21.2 23.7 38.4 27z" fill="#aa8954"/>
-                  </g>
-                  <g id="hemisphere-garnet" fill-rule="evenodd">
-                    <path class="garnet-cap" d="M561 402.5l73-42.5 12 12zm74.7-44l5.4 5.8 39-20.7zm44-12.5l4 13.6-41.6 5zM643 366.8l4.7 4.6L676 363zm37.8-24.3l4.7 18 2.5-21.2zm9.4-4.5l3.5 5.2 6.6-9.6zm-.8 3l-2 19.4 22-.8zm14.4-8.5l-6.5 12 48.6 16zm-3.6 15.7l12 10.7 27.2 1zm6-16.4l9.3 4.3 10-4zm3.6-3.6l18.2 1.4 18-10.7zm39.6-11.8l15.8-4v4.7zm20-5.7l38-5-15.8 13.2zm-21 10l40 18 36.4-16.2zm.7 2.5l-1 34.7 37-17zm-3-.7L717 339l30 19zm3 38.2l79-36 7.8 50zm18 5l30.5 30.7 2.8-25zm36 7.3l30 3.4-15 24.6zm-2.4 1.6l-4 69.3 20.4-41zm35 5.4L758 515.4l138.4-79.7S837 381 835.4 380zm-1.8-25.7l39.6-34.7-1.4 52.2zm-4.3-33l4.3 30.5 35.7-31zm-16-16l-17 13 30.5 1.3zm3.7-1.7h26.3l-13 15.4zm30.6.4l11.8 15.3 14.3-10.7zm-2.5 1l-11.7 13.6 22.2-.4zm30.5 5.4l.3 32.5 20.5-24zm-3 1.4l-9.5 7 9-1.7zM898 321l-12.6 16.5 27.8 6.4zm-14.8 18.6l-6.4 5.8 20 14zM875 348l.7 23.8 24-7.2zm-29.6 37.7l57.8-19.6-7 68zm-8.6-15.3l-2.5-13.3 17 8zm.7 3.6l17.5-7.6v14zm-1 2l7 7.2 8.3-2.5zm21-9l-.7 11.6 13.2-4.3zm29-27.4l14.2 21.8 15.4-12.8zm15.3 23l15.3-12 1 19.8zm3.6 4.2l-2.5 17 13-11.3zm10.3 9.2l-12 11 9.5 4zM902 389.6l-3.4 39.7 15-35.7zM798.6 496.4l30.7 33.6 61.8-88.6zM755 516.8l-45 61 63.6-46zm7-.8l34-17 32 31.7zm-2.7 2.2l16.4 12.2-.3-8.3zm18.2 5l19 36L825 533zm0 8.2l-80.7 58.2 98.6-26.7zm4.3 38L716.4 587l19.3 33zm-89.8 24l21.2-5.3 16.4 25zm.5 4.5l15.4 22 11-10zm29.5 14l11.6 8-3.6 8zm-3.4 2l-13 12 19.8-1zm-24 15l33.6-1-19 20zm-3.2 1l15.4 18-57.5 41.3zM638 644l50.6-46.4 17.8 24zm-13.7 9.3l22 35 40.8-55zm-3 2l-30.6 23L644 690zM588.7 682l-1.5 56 61.7-45.7zm-4 .2l-44 30 43.7 25zm-21.4 45.5l-31 12.5 49-.7zM537.5 714l-11 26 33-14zm-11.8 31l-5.7 5 30.7 14.3zm-1.4 9.3l11 12.5L547 765zm-5.3-1.8l-13.6 25 27.8-9.3zm-27.6 9.5l10.7 16.2 33-59.6zm-9.6-12.4l7.5 12.2 33.6-35.4zM379.3 796l62 3 38.7-48.6zM480 754.3L445 798l54.6-19.4zm-104 42L323.6 817l55.7 1zm4 1.7l2.5 18.8 56-15.7zm-60.7 13.8l3.6 4.3 33-14zm-45 2.8l42-3.5-18.8 18zm-4.3.4l-30.4-4.6 25 16zm3 1l-5.5 11.5 26.8 2zm44-1l-17.7 14.6 34-2.5zm9.8 4l9 7.8 40.6-8zM526 743l27.2 20.6 29.3-22.5z" fill="#380b06"/>
-                    <path class="garnet" d="M768.7 590l-58 58.2 83.8 23.7z" fill="#631009"/>
-                    <path class="garnet" d="M785 627l56.5 196L887 625.3z" fill="#651009"/>
-                    <path class="garnet" d="M902 566.3l-14 79.3 42.4-3zm15.7-49.5l12.7 41.5 13-41.5zm-48.5 30.8l11-.5-7 11zm-.5 176.8L851 792l44-54zm0-5.4l18.7-71.3 57 38.8zm18.3-4.2l56.5-24.7-17.2 37zm-17.8 6.2l15.2-5.4 6.8 18.2zm18-3.4l6.8 18 10-.3zm2.2-.2l33 10L906 734z" fill="#631009"/>
-                    <path class="garnet" d="M895.2 740.6L874.5 766l27.6 1.6z" fill="#5f1009"/>
-                    <path class="garnet" d="M872.3 769l12 20.8 17.8-20.4z" fill="#631009"/>
-                    <path class="garnet" d="M870.2 771.7l-17 21 31 .2zM680.8 670.4l143.2 113-29.3-110.7z" fill="#5f1009"/>
-                    <path class="garnet" d="M707.6 650.4l-8.6 17.2 84.6 3zm-4.6 3.8l-7 14.2-13.4.2zm-3.2 97l69.2-8.8 54.8 43zm55.8 51.8l-35 44.4-39.3-42.7zm7.8 20.7l64.4-34.6 10.6 33zm88.6-29l31.4.4-9 9z" fill="#631009"/>
-                    <path class="garnet" d="M897.5 739.8l27.8-11-21.5 38z" fill="#5f1009"/>
-                    <path class="garnet" d="M759.4 859.5l9.6 15.2 8.8-4.6z" fill="#631009"/>
-                    <path class="garnet" d="M787.4 569.4l49 53.5 50-57z" fill="#5e0f08"/>
-                    <path class="garnet" d="M772 586.4l12-14.4-2 53.2zm14-15l47.8 52-49.3 1.6zm101-2.4l-47.5 55.6 49-1.6zm3-2.2l9.6-.2-8.5 53zm-6.8-19.8L872 564h28.2zm2.8-1l22.7.8-5 17.3zm-7.4-56.4l-62 53.3 83 2zm-64.8 55l28.3.2-13 12.5zM812 546l-14.5 14.7 29.3-3zm-21.6 20.4l6.6-4.3 25.5 3zm12.6-4.8l24.3-2.3-4.4 4zm40.8-15.3l27 17.6h-46.2zm2.2-1l21 1.7 4.6 13zm45 102l33 23.3 7.4-26z" fill="#5a0f08"/>
-                    <path class="garnet" d="M945.3 684l-21-12.4 31.8-15z" fill="#540f08"/>
-                    <path class="garnet" d="M939.7 637.3L927 668l31.4-15.3zm1.8-1l17.4 14.4 6-22.5z" fill="#5a0f08"/>
-                    <path class="garnet" d="M950.3 616.6l-9.3 18 26.2-9.4zm1-1l15.2 7.3 5.3-50z" fill="#540f08"/>
-                    <path class="garnet" d="M931 561.3l2 81.3 38.3-72.7zm-24.6 3.5l22-2.8 2.7 79zm5.8-19.8l-5.6 17.8L928 559zm-11.4-1.4l9.6.8-15.2-16.2zm-3-15.4l29.5 27.5-11-38zm-9.4-18.7l7.6 17 16.7-10.4zM924 447l-14.4 66.8 38.2 1.5zm12.2 25.6l11.6 37.4 20.2-33zm16.6 38.2L933 558l35.7-39.6zm6.2 22.7l-25 26.3 37 8zm1.4-3l11 33.6 3-36zm10.6-12l-9.6 10 13-2.3zM900 493l-13 13.7 20.6 5.8z" fill="#5a0f08"/>
-                    <path class="garnet" d="M892.5 446l15.6 63.8 16-66.8z" fill="#580f08"/>
-                    <path class="garnet" d="M890 446l-18.2 26.6 25.5 6.4zm-20 30l-37 50.4 46-40.6zm.8-1l10.6 10.3 14-5zm9.8 13.3L886 505l11.5-13.2zm16.7-6.3l-15 4.8 17.7 4zm73 10.6l-18.7 14.6 19.7 9.4zm-1.3-13l-16.2 25 17-14.5zm-119 316l24.5 10L858 819zm-1.5 2l-5.8 25.6 13.2-2zM735 763l90 25.3-52.5 29zm-1.6.8l-19.7 37.6 43.7-.3zm26.2 39.6l11.4 15.2-11 5.3zM756 805l-17.3 21.4H757zm29.6 20.2l67.5-.3-26 9zm-5.8 1.7l58.6 12-36.4 32z" fill="#5a0f08"/>
-                    <path class="garnet" d="M829.6 835l22.7-8-9.6 10.6z" fill="#540f08"/>
-                    <path class="garnet" d="M737 828.7l38.8-1.5-20.7 25zm-2 2.8l-29.4 43.7 59.8-2zm42-3.5l-12 16 34 27zm-13.3 18.7L757 855l11.7 7zm2.5 1.3l27.8 21-22.5-6zm7.6 17.6l25.5 7.6-11 5.5zm4 7l-6.5 2.8 15.6 5.3zm-16 4l23 5.4-25.7 18.4zm-57.8 0l-29 47 85.6-48z" fill="#5a0f08"/>
-                    <path class="garnet" d="M759.4 878.5l-35 19.4 32.7 3z" fill="#540f08"/>
-                    <path class="garnet" d="M704.6 908.5l34.8-.2-22.2 11.8zm17.7-8.3l-16 7.3 35.4-.7zm5.5-.2l27.3 2.5-11 3.8z" fill="#5a0f08"/>
-                    <path class="garnet" d="M702.6 910.5L676.3 925l37.4-3.6z" fill="#540f08"/>
-                    <path class="garnet" d="M675 926.2l-11 13.4 41-15zm-114.6-37.4l157.8-40.4-57.8 92.7zm-22-118.4l74 53 72.7-57z" fill="#5a0f08"/>
-                    <path class="garnet" d="M697.5 686.5l-18.7 48.3 85 3.5z" fill="#580f08"/>
-                    <path class="garnet" d="M679.6 737.3l17 12 68-8zm16 14.4l-7 12.6 43-1.7zM688 768l23.2 34 19.4-36.7zm-2.2.6l-10.2 7.3 17 2zm-9.7 9.6l17 3-11 21.5zm20 4L684 804l26-1zm-22-4.2l-59 46 43.6-11.7zm.5 3.2L666 802l14.3 2zm6 24.8L663 850.4l42-17zm-16-1.5l14 1.7-18 44.2zm-48 21.7l44.5-12-4.4 48.6zM685 843l22.2-9-6.8 17zm23.3-6.7l-5.6 14.4 15-4zm-24 9l-21 6.7 34-.5zm-25 7.4l-1 10 33.3-9zM616.5 831l1.3 40.7 35.6-8.6zm-4.4-4.8l-11 13.6 13.8-1zm-9.3 15.4l12-.2 1 18.6zm6.7 31l-9.4-31.2 14 21.6zm-11-29.2l9.7 29.8-46.2 14.4z" fill="#5a0f08"/>
-                    <path class="garnet" d="M608 825.4l-69.8 88-62.4-95.8z" fill="#520f08"/>
-                    <path class="garnet" d="M559 892l-20.3 25.6 57.3-7.3zm-34.2 30.2l41.4-5-19 38.8z" fill="#5a0f08"/>
-                    <path class="garnet" d="M600.5 913.3l14.4 39.4 42-10z" fill="#560f08"/>
-                    <path class="garnet" d="M494.5 851L463 894l72.6 19.8zm-13.7 10l-19 30-57.2-61.3zm-94.2 20.8l149.3 34-83 20zm-18-45.5l21 42 19.3-41.7zM660 687l-16.5 79 33.3-30.5zm1.6-2.7l16 46.4 18-45.4zm1.6-2.6l16.4-11 15 12.6zm-7 5.3l-64.5 52.3 54.8 1.3zm-56.7 56l46.2.4-4 22.2zm-13.5-1.4l-4.7 25.3 57-2zm-4.4 2.4l-32.8 23.4 29.8-.5zm95.7-5.2l-30 27 37.3-1.7zm2 .5l6.8 24.3 8-13z" fill="#5a0f08"/>
-                    <path class="garnet" d="M918 347.7l.6 26.2 15-2zm-1.4 29.6l18.6-3.4-2.2 35zm2.2 8l5.3 9.7-16 16.8zM905.4 417l18.5-20-7 20.5zm-1.8 2.6l6.4 20 6.4-20zm-1.3 2.4l-7.3 19 13.4.3zm22.5-23l-13 42.4 28.6-.3zm11.8-20.2L934 416l19.4-1.2zm-2.8 39.4L942 441l12.8-24zm20.8 3.8l-5 9 10 9.4zm-6.4 10.5l-5.3 10.7 18 1.3zm-22.7 11l7.7 23L944 445zm20.5 2l16 .6 4.6 29zm-1.7 1.3l-9.7 22.3 30 7zM534.6 771.4l75 51.5-93.2-5zm-4.6-.4l-37.6 11.3 31 11.3zm-39 12.8l2.7 30.8 27.8-20.2zm30.2 13l-27 20.3 20.2 1zm-32.5-13l-4.6 33-18-24.4zm-9 31.5l-24.4-.5 9.4-20.7zm10-23.7L486 817l6 .4zm-71.5 16.7l44-14.4-13.2 28zm-2.8 2.5L398.8 830l-10-12.4zm2.8-.3l-15.4 18 25 9.8zm2 .3l27.3 12.4-17.4 15zm11.8 28.5l16.5-15L453 848zm22.3-23l18 .6-10.7 11zm-1.5 2.7l-3 4.7 9.3 4.5zm-2 8.2l4.3 22.2 5-19.2zM474 819l-12 12.5 30.4 18zm2.8 24l13 7.7-6.4 9.6zm-15.2-9.5l-4.8 16.7 17.5-9.4zm12.2 9.5l-14.4 8.2 21 7.8zm-63.8-4.4l16 16.4-25 4.3zM399.3 861l-7 18 29.2 6.5zm4.3.6l24.5-4.8 9 8.3zm-.8 1.4l23.5 25-12-22.4zm14.6 3l10.7 21.3 10-20.3zm21.3 3.4l-8.6 19.2 32 5.4zM386 818l-6 16.5 18.8-.2zm15.3 12.2l5.3 3.6-5 1zm-35.3-7.5l17.4-4.6-7 18zm-1.3 2.3l.7 10.5 8-.5zm-3 .2l-27.3 3.3 27.7 11.8zm2.7 12.6l-.5 5 8 3.6zm8 11.2l-17 30.2 28 1.5zm5.4 8.8l6.6 21.7 4.3-.3zm7.8 25.5l-8 25.2 55 13zm-31-2.3l29.8 1.8-12.7 34zm-1.6 2.5l14.4 31.3-25-11z" fill="#510f08"/>
-                    <path class="garnet" d="M371 849.4l-29.6 51L280 831z" fill="#4e0e08"/>
-                    <path class="garnet" d="M293 831l14.8-.5-1.7 4zm16.4 0l17-2.3-8.7 7.6zm21.4-1.5l30.8 13.4-40.4-6zm-60.3-.5l-10.6 7.3 58 40.7zm18.7 30.3l31.5 20.4-3.8 7zm34 22.5l16 19.4-20.7-12.4zm-82.8-68.2l17 21.4 9.3-6.3zm218 123l63-15.2-26 32.6zm63.8-13.2L499 954.7l44.5.3zm46.5-5L550.5 956l38.4-2zm1.8-2.4l26.8-4.2-5.4 42zm28-1.7l-5 40 20-1.3zM454.8 937l-15.6 7 52.5 10zm-15.4-11.3l-2.8 17 14.2-6.6zm-14-3.3l7.7 19.2 5-16.4zm-48.4-12l-3.7 8.5 50.2 2zm2.3 11L411 923l19.8 19zm34 1.6l16 15-6-15z" fill="#510f08"/>
-                </g>
-            </svg>
-            <span class="button signup"><a href="https://gwelof.typeform.com/to/WajzyX">Get Involved</a></span>
+    <div class="jumbotron hero">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-offset-2 col-md-8 col-md-offset-3 get-it">
+                    <h1 class="text-center">Building Realities</h1><img class="img-responsive visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" src="assets/img/goggles-1.png">
+                    <p class="text-center">April 8th - 9th | Florida State University | Dirac Science Library</p>
+                    <hr>
+                    <p class="text-center">Our mission is to provide students with access to Virtual Reality hardware and give them the power to build new worlds. </p>
+                    <p class="text-center">Interested in being a part of the event organization process? We are currently looking for Student Volunteers and Sponsors! </p>
+                    <p class="text-center"><a class="btn btn-danger btn-lg" role="button" href="mailto:sponsor@building-realities.org">Sponsor </a><a class="btn btn-primary btn-lg" role="button" href="https://gwelof.typeform.com/to/WajzyX">Volunteer </a></p>
+                </div>
+            </div>
         </div>
-    </section>
-    <!-- Headline changes sentence over interval of time with effect. -->
-    <section class="absolute summary">
-        <div class="headline realtive">
-            <!-- All of the sentences used in headline, add as many as desired. -->
-            <p class="visible">Attend the VR hackathon.</p>
-            <p class="hidden">Discover the new reality.</p>
-            <p class="hidden">Build new experiences.</p>
-            <p class="hidden">Combine art &amp; technology.</p>
-        </div>
-        <p class="tagline"><b>We are looking for coordinators!</b></p>
-        <p class="tagline">Hosted by ACM SIGGRAPH @ FSU</p>
-    </section>
-</header>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-<nav class="site-nav crossfade">
-
-</nav>
-<!-- Main content -->
-<main class="centered">
-</main>
-
-<script src="js/headline.js"></script>
-<script src="js/svgAnimation.js"></script>
 </body>
+
 </html>
